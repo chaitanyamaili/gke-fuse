@@ -40,3 +40,9 @@ kubectl annotate serviceaccount fuse-ksa \
     --namespace fuse-ns \
     iam.gke.io/gcp-service-account=fuse-sa@project_fuse.iam.gserviceaccount.com
 ```
+
+## Apply changes
+
+```bash
+kubectl apply -f static-provisiong.yaml -n fuse-ns
+```
